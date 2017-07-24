@@ -9,14 +9,21 @@ function to_roman (num) {
 
             num = num-angka[i];
             if (num > 0){
-              result += roman[i]+ to_roman(num-angka[i]);
+              result += roman[i]+ to_roman(num+1-angka[i]);
+              // return result;
+              // break;
+            }
+            else{
+              result+= roman[i];
               // return result;
             }
+            // return result;
             // else {
             //   result += roman[i];
             //   //  return result;
             // }
         }
+
     }
  return result;
 
