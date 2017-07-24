@@ -3,16 +3,20 @@ function to_roman (num) {
   let romawi  = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
   let tampung = '';
 
-  for( let nilai = romawi.length; nilai >=0; nilai--){
-    if(nilai === romawi[i]){
-      
+  for( let i = romawi.length-1; i >=0; i--){
+    while(num >= decimal[i]){
+      num -= decimal[i];
+      tampung += romawi[i]
     }
+
+
   }
 
 
   return tampung;
 }
 
+// console.log(to_roman(13));
 // Drive code
 console.log('My totally sweet testing script for new roman\n')
 console.log('input | expected | actual')
