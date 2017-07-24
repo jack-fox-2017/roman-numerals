@@ -8,8 +8,6 @@ function to_roman (num) {
       num -= decimal[i];
       tampung += romawi[i]
     }
-
-
   }
 
 
