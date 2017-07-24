@@ -9,10 +9,7 @@ function to_roman (num) {
           num = num - digit[i];
           temp.push(roman[i]);
       }
-      //console.log('num =',num);
-      //console.log('i =',i);
     }
-      //console.log('temp = ',temp);
   }
   return  temp.join('');
 }
