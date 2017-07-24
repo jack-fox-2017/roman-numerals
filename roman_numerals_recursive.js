@@ -1,20 +1,20 @@
 function to_roman (num) {
-var roman = ["M", "CM","D","CD","C", "XC", "L", "XL", "X","IX","V","IV","I"];
-var angka = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-
-var result="";
-  for (var i = 0;i<=angka.length;i++) {
-
-    while (num%angka[i] < num) {
-
+ var roman = ["M", "CM","D","CD","C", "XC", "L", "XL", "X","IX","V","IV","I"];
+ var angka = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];var result = "";
+var resultbgt="";
+if (num > 0){   for (var i = 0;i<=angka.length;i++) {
+    if (num >= angka [i]){
       result += roman[i];
-      num -= angka[i];
+      if (num-angka[i]!==0){
+        result += to_roman(num-angka[i]);
       }
-  }
-  return result;
+ break;
+}
+}
+ return result;
+}
 }
 
-// Drive code
 console.log('My totally sweet testing script for new roman\n')
 console.log('input | expected | actual')
 console.log('——————|——————————|———————')
