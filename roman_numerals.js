@@ -3,10 +3,9 @@ function to_roman (num) {
   let romawi  = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
   let tampung = '';
 
-  for( let nilai = 12; nilai >=0; nilai--){
-    while( num >= decimal[nilai]){
-      num -= decimal[nilai]
-      tampung += romawi[nilai]
+  for( let nilai = romawi.length; nilai >=0; nilai--){
+    if(nilai === romawi[i]){
+      
     }
   }
 
